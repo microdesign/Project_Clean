@@ -16,3 +16,4 @@ This projects aims to protect you from bad clients. It can be uploaded to any sh
 
 
 ##Licensing
+http://www.wtfpl.net/
