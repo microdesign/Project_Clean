@@ -35,7 +35,7 @@ if (isset($_POST['confirm']) AND sha1(md5($_POST['pass_again'])) == sha1(md5($pa
 	foreach ($paths as $path) 
 	{
 		$files = new RecursiveIteratorIterator(
-			new RecursiveDirectoryIterator($path, RecursiveDirectoryIterator::SKIP_DOTS),
+			new RecursiveDirectoryIterator($path, 4096),
 			RecursiveIteratorIterator::CHILD_FIRST
 			);
 
@@ -65,7 +65,7 @@ if (isset($_POST) AND isset($_POST['pass']))
 		foreach ($paths as $key => $path) 
 		{
 			$files = new RecursiveIteratorIterator(
-				new RecursiveDirectoryIterator($path, RecursiveDirectoryIterator::SKIP_DOTS),
+				new RecursiveDirectoryIterator($path, 4096),
 				RecursiveIteratorIterator::CHILD_FIRST
 				);
 
