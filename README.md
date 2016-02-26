@@ -1,4 +1,4 @@
-Project_Clean
+Project Clean
 =============
 
 This projects aims to protect you from bad clients. It can be uploaded to any shared hosting and provided you have the correct details, it can destroy directories recursevly and destroy MySQL databases.
